@@ -1,77 +1,138 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
+<!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Dank Memes" />
+    <meta name="author" content="Dante Gil-Marin" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.min.css">
-<!--    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox-dark.css"> -->
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--
-Sigma Template
-http://www.templatemo.com/tm-479-sigma
--->
-    <title>KClub Dashboard</title>
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Members Dashboard</title>
+   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!--  Bootstrap Style -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--  Font-Awesome Style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--  Pretty Photo Style -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!--  Google Font Style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css' />
+    <!--  Custom Style -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
-
 <body>
-
-<header id="top">
-
-	<div class="container-fluid">
+     <div id="pre-div">
+        <div id="loader">
+        </div>
+    </div>
+    <!--/. End Preloader -->
     
-        <div class="row">
-        
-            <div class="col-lg-4 col-md-12 site-title">
-                <h1>Dashboard</h1>
-                <h2>Information for Memebrs</h2>
-                
+    <div id="home" class="navbar navbar-default move-me ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/kclublogo2.0.gif" class="navbar-brand-logo " alt="">
+                </a>
             </div>
-            
-            <div class="col-lg-8 col-md-12 main-menu">
-                
-                <nav class="navbar navbar-light">
-                  <ul class="nav navbar-nav single-page-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#gallery">Announcements</a>
+            <div class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a href="#about">ABOUT <i class="fa fa-bars"></i>
+                            <span>Who We Are?</span>
+
+                        </a>
+
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about">Learn</a>
+                    <li class="dropdown">
+                        <a href="#impact">Service <i class="fa fa-bars"></i>
+                            <span>Time We Commited</span>
+
+                        </a>
+
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
+
+                    
+
+                    <li class="dropdown">
+                        <a href="#recent-events">EVENTS  <i class="fa fa-bars"></i>
+                            <span>Recent Events</span>
+                        </a>
+
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link external" href="http://www.vhs-keyclub.github.io" target="_parent">Front Page</a>
+                    <li class="dropdown">
+                        <a href="#contact">CONTACT<i class="fa fa-bars"></i>
+                            <span>Reach us Here</span>
+                        </a>
+
                     </li>
-                  </ul>
-                </nav>
-              
+                    <li class="dropdown">
+                    		<a href="members">MEMBERS<i class="fa fa-bars"></i>
+                            <span>Tools and Information</span>
+                        </a>
+
+                    </li>
+                    
+                </ul>
             </div>
+            <br>
             
         </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-            	<hr class="sigma-hr">
-            </div>
-        </div>
+    </div>
+    <!--./ NAV BAR END -->
+    <div class="header-sec-bar" >
+        <span>
+        	
+        </span>
 
     </div>
-    
-</header>
-
-<section id="home">
+    <!--./ HEADER SECTION BAR END -->
+    <section id="home">
 
 	<div class="container-fluid">
 
         <div class="row">
         	<div class="sigma-content col-lg-3 col-md-6 sigma-bg-lightgray text-center">
-            	<span class="sigma-icon fa fa-power-off"></span>
+            	<span class="sigma-icon fa fa-calendar"></span>
                 <h2>Calendar</h2>
             	<p>Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.</p>
             	<a herf="www.vhs-keyclub.github.io/calendar">
@@ -79,58 +140,27 @@ http://www.templatemo.com/tm-479-sigma
             	</a>
             </div>
             <div class="sigma-content col-lg-3 col-md-6 sigma-bg-gray text-center">
-            	<span class="sigma-icon fa fa-bolt"></span>
-            	<h2>Sign Up</h2>
+            	<span class="sigma-icon fa fa-hourglass"></span>
+            	<h2>Hours</h2>
             	<p>Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.</p>
             </div>
             <div class="sigma-content col-lg-3 col-md-6 sigma-bg-darkgray text-center">
-            	<span class="sigma-icon fa fa-thumbs-up"></span>
-            	<h2>Vote</h2>
+            	<span class="sigma-icon fa fa-question"></span>
+            	<h2>TBA</h2>
             	<p>Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.</p>
             </div>
             <div class="sigma-content col-lg-3 col-md-6 sigma-bg-black text-center">
             	<span class="sigma-icon fa fa-bar-chart"></span>
-            	<h2>Hours</h2>
+            	<h2>TBA</h2>
             	<p>Praesent lorem dui, suscipit eu volutpat id, sollicitudin ut mi. Praesent ornare massa vehicula.</p>
             </div>
         </div>
         
 	</div>
     
-</section>
+	</section>
 
-<section id="gallery">
-
-	<div class="container-fluid">
-
-        <div class="row">
-        
-			<a href="images/tm-sigma-01.jpg" data-toggle="lightbox" data-gallery="sigma-gallery" data-title="Image Title 01">
-            <img src="images/tm-sigma-01.jpg" alt="Image 1" class="img-fluid sigmapad col-lg-4 col-md-6 col-sm-6"></a>
-
-			<a href="images/tm-sigma-02.jpg" data-toggle="lightbox" data-gallery="sigma-gallery" data-title="Image Title 02"
-            	data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non nunc dictum.">
-            <img src="images/tm-sigma-02.jpg" alt="Image 2" class="img-fluid sigmapad col-lg-4 col-md-6 col-sm-6"></a>
-
-			<a href="images/tm-sigma-02.jpg" data-toggle="lightbox" data-gallery="sigma-gallery" data-title="Image Title 03">
-			<img src="images/tm-sigma-03.jpg" alt="Image 3" class="img-fluid sigmapad col-lg-4 col-md-8 col-sm-12"></a>
-
-			<a href="images/tm-sigma-04.jpg" data-toggle="lightbox" data-gallery="sigma-gallery" data-title="Image Title 04"
-            	data-footer="Aenean et tortor nec odio tempor volutpat nec in dui. Etiam libero turpis, accumsan nec.">
-			<img src="images/tm-sigma-04.jpg" alt="Image 4" class="img-fluid sigmapad col-lg-8 col-md-4 col-sm-6"></a>
-
-			<a href="images/tm-sigma-05.jpg" data-toggle="lightbox" data-gallery="sigma-gallery" data-title="Image Title 05">
-			<img src="images/tm-sigma-05.jpg" alt="Image 5" class="img-fluid sigmapad col-lg-4 col-md-4 col-sm-6"></a>
-			
-            <a href="images/tm-sigma-06.jpg" data-toggle="lightbox" data-gallery="sigma-gallery" data-title="Image Title 06">
-            <img src="images/tm-sigma-06.jpg" alt="Image 6" class="img-fluid sigmapad col-lg-4" title="Bicycle"></a>
-        </div>
-        
-    </div>
-
-</section>
-
-<section id="about">
+	<section id="about">
 
 	<div class="container-fluid">
     
@@ -189,122 +219,45 @@ http://www.templatemo.com/tm-479-sigma
 	</div>
     
 </section>
-            
-<section id="contact">
+    <!--./ footer-bar start -->
+    <div id="footser-end">
+        <div class="container">
 
-	<div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    Source and Credits |  on <a href="http://www.github.com/" target="_blank" style="color: #fff"> github.com</a>
+                        <a href="https://twitter.com/VvilleKeyClub"><i class="fa fa-twitter fa-3x" aria-hidden="true" style="color: white"></i></a>
+                        <a href="https://www.instagram.com/vvillekeyclub/"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="color: white"></i></a>
 
-        <div class="row sigma-section-header">
-        	<div class="col-md-offset-2 col-lg-offset-3 col-lg-6 col-md-8 col-sm-12 text-center">
-        		<h1>Contact</h1>
-                <p>You may <a rel="nofollow" href="http://www.templatemo.com/contact" target="_parent">contact</a> templatemo if you have any question. Suspendisse dolor purus, malesuada ut luctus quis, consectetur vel ante. Integer a pulvinar orci.</p>
+                </div>
             </div>
+
         </div>
-        
-        <div class="row">
-            <div class="sigmano col-lg-8 col-md-12">
-                
-                <form action="#contact" method="post" id="contact-form">
-                <div class="col-md-6">
-               		<fieldset class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Write a full name">
-                  	</fieldset>
-                  
-                  	<fieldset class="form-group">
-                    	<label for="email">Your Email</label>
-                    	<input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    	
-                  	</fieldset>
-                    
-                </div> 
-                <div class="col-md-6">
-                    
-                  	<fieldset class="form-group">
-                    	<label for="message">Your Message</label>
-                    	<textarea class="form-control" id="message" rows="4" placeholder="Write a message"></textarea>
-                  	</fieldset>
-                  
-                  
-                  	<button type="submit" class="btn btn-success btn-lg">Submit</button>
-                </div>  
-            	</form>
-                
-            </div>
-            
-			<div class="sigma-content col-lg-4 col-md-12">
-        		<h3>Our Address</h3>
-                <p>Suspendisse dolor purus, malesuada ut luctus quis, consectetur vel ante. 
-                Integer a pulvinar orci, eget sagittis enim.</p>
-          		<p><span class="contact-icon fa fa-envelope-o"></span> Email: info@company.com</p>
-                <p><span class="contact-icon fa fa-phone"></span> Phone: 070-070-0880</p>
-            </div>
-        </div>
-        
-	</div>
+    </div>
+    <!--./ footer-end End -->
+      <div class="move-me">
+
+      
+    <a href="#home" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+          </div>
+     <!--END SCROLLUP LINK SECTION-->
     
-</section>
-
-<footer>
-
-	<div class="container-fluid">
-    
-    	<div class="row">
-            <div class="col-md-12">
-            	<hr class="sigma-hr">
-            </div>
-        </div>
-
-        <div class="row">
-        	<div class="sigma-copyright col-lg-8">
-            	<p>Source and Credits on Github
-                    
-            </div>
-            
-            <div class="sigma-copyright col-lg-4 single-page-nav text-right">
-            	<p><a href="#top">Go to top</a></p>
-            </div>
-        </div>
-        
-    </div>   
-
-</footer>
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-        <script src="js/ekko-lightbox.min.js"></script>
-        <script src="js/jquery.singlePageNav.min.js"></script>
-        <script>
-
-            // Prevent console.log from generating errors in IE for the purposes of the demo
-            if ( ! window.console ) console = { log: function(){} };
-
-            // The actual plugin
-            $('.single-page-nav').singlePageNav({
-                offset: $('.single-page-nav').outerHeight(),
-                filter: ':not(.external)',
-                updateHash: true,
-                beforeStart: function() {
-                    console.log('begin scrolling');
-                },
-                onComplete: function() {
-                    console.log('done scrolling');
-                }
-            });
-			
-			$(document).ready(function ($) {
-
-				// delegate calls to data-toggle="lightbox"
-				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-					event.preventDefault();
-					return $(this).ekkoLightbox({
-						always_show_close: true
-					});
-				});
-
-			});
-			
-        </script>
-
+    <!--  Jquery Core Script -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--  Scrolling Script -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  PrettyPhoto Script -->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <!--  knob Scripts -->
+    <script src="assets/js/jquery.knob.js"></script>
+     <!--  SCROLL REVEAL Scripts -->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!--  Custom Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      
+    </script>
 </body>
 </html>
