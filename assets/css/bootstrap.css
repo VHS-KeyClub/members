@@ -288,7 +288,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #333;
   text-decoration: none;
 }
 a:hover,
@@ -2081,8 +2081,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #3157F8;
+  border-color: #1439DA;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2090,8 +2090,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: #1439DA;
+  border-color: #3157F8;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2245,8 +2245,8 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #3157F8;
+  border-color: #1439DA;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -2254,8 +2254,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
   color: #fff;
-  background-color: #d2322d;
-  border-color: #ac2925;
+  background-color: #1439DA;
+  border-color: #3157F8;
 }
 .btn-danger:active,
 .btn-danger.active,

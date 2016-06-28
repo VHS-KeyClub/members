@@ -116,6 +116,8 @@ h2:after {
     display: table;
     color: #fff;
 }
+
+
 /*=====================================
    HEADER SECTION BAR STYLE 
     ===================================*/
@@ -305,6 +307,15 @@ h2:after {
         padding: 20px;
         min-height: 100px;
     }
+}
+
+/*=====================================
+   CONTACT STYLE 
+    ===================================*/
+#contact {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: rgb(240, 240, 240);
 }
 
 /*=====================================
