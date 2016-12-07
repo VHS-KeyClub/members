@@ -1,14 +1,5 @@
 
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
 
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% Free To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDIT US AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
 /*=====================================
    GENERAL STYLE SECTION
     ===================================*/
@@ -407,3 +398,27 @@ opacity: 0.5;
     top: 50%;
     width: 200px;
 }
+
+/*=====================================
+ BUTTON CODE STYLE 
+    ===================================*/
+.btn-style-2 {
+    color: #fff;
+    background-color: #1439DA;
+    border-color: #1439DA;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDIT US AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
